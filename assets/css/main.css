@@ -1,0 +1,29 @@
+/* ================================================
+   MAIN.CSS — Point d'entrée unique
+   → Ce fichier importe tout dans le bon ordre
+   → C'est le seul fichier CSS à lier dans head.php
+   ================================================ */
+
+/* Les @import DOIVENT être en premier */
+@import 'variables.css';
+@import 'layout.css';
+@import 'home.css';
+@import 'contact.css';
+@import 'about.css';
+
+/* Polices locales  */
+@font-face {
+  font-family: 'Aileron';
+  src: url('../fonts/Aileron-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HomemadeApple';
+  src: url('../fonts/HomemadeApple-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
