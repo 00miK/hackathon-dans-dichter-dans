@@ -1,12 +1,4 @@
-/* ================================================
-   MAIN.JS
-   1. Navbar scroll
-   2. Burger menu
-   3. Dropdown Media
-   4. Animations au scroll
-   5. Formulaire de contact
-   6. Annee footer
-   ================================================ */
+
 
 /* ===== 1. NAVBAR ===== */
 const navbar = document.getElementById("navbar");

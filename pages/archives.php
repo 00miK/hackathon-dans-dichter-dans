@@ -38,7 +38,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/e1.jpeg" alt="Dans! Dichter! Dans! #2">
+                <img src="/PROJET-SOCIETE/assets/img/ar1.jpeg" alt="Dans! Dichter! Dans! #2">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #2</h3>
@@ -50,7 +50,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/e2.jpeg" alt="Dans! Dichter! Dans! #4">
+                <img src="/PROJET-SOCIETE/assets/img/ar2.jpeg" alt="Dans! Dichter! Dans! #4">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #4</h3>
@@ -77,7 +77,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #5">
+                <img src="/PROJET-SOCIETE/assets/img/ar3.jpeg" alt="Dans! Dichter! Dans! #5">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #5</h3>
@@ -89,7 +89,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #6">
+                <img src="/PROJET-SOCIETE/assets/img/ar4.jpeg" alt="Dans! Dichter! Dans! #6">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #6</h3>
@@ -116,7 +116,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #12">
+                <img src="/PROJET-SOCIETE/assets/img/ar5.jpeg" alt="Dans! Dichter! Dans! #12">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #12</h3>
@@ -128,7 +128,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #9">
+                <img src="/PROJET-SOCIETE/assets/img/ar6.jpeg" alt="Dans! Dichter! Dans! #9">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #9</h3>
@@ -155,7 +155,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #14">
+                <img src="/PROJET-SOCIETE/assets/img/ar7.jpeg" alt="Dans! Dichter! Dans! #14">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #14</h3>
@@ -167,7 +167,7 @@
 
             <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #15">
+                <img src="/PROJET-SOCIETE/assets/img/ar8.jpeg" alt="Dans! Dichter! Dans! #15">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #15</h3>

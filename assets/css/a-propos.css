@@ -77,18 +77,21 @@
   overflow: hidden;
 }
 
-/* Image pleine largeur en haut */
+/* Image pleine largeur en haut — plus large que le container */
 .apropos-banner-img {
+  margin-top: 16px;
   position: relative;
   z-index: 1;
   margin-bottom: var(--space-md);
+  margin-left: calc(-1 * var(--container-padding));
+  margin-right: calc(-1 * var(--container-padding));
 }
 
 .apropos-banner-img img {
   width: 100%;
   height: clamp(300px, 45vw, 580px);
   object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: 24px;
   filter: grayscale(100%);
   display: block;
 }
@@ -119,7 +122,7 @@
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: var(--space-lg);
-  align-items: start;
+  align-items: end;
   position: relative;
   z-index: 1;
 }
