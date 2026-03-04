@@ -1,9 +1,9 @@
 <?php
-  $pageTitle       = "Contact — Nom de la Société";
-  $metaDescription = "Contactez-nous pour toute demande d'information ou devis.";
+  $pageTitle       = "Contact — Dans! Dichter! Dans!";
+  $metaDescription = "Neem contact met ons op voor vragen over ons programma, een samenwerking, of gewoon hallo zeggen.";
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 <head>
   <?php include __DIR__ . '/includes/head.php'; ?>
 </head>
@@ -11,60 +11,89 @@
 
   <?php include __DIR__ . '/includes/header.php'; ?>
 
-  <main>
+  <main class="contact-page">
+
+    <!-- Formes abstraites roses en arrière-plan -->
+    <div class="contact-blob contact-blob--tl" aria-hidden="true"></div>
+    <div class="contact-blob contact-blob--br" aria-hidden="true"></div>
+
     <div class="container contact__grid">
 
+      <!-- ===== COLONNE GAUCHE ===== -->
       <div class="contact__info">
-        <span class="section__label">Parlons-nous</span>
-        <h1 class="section__title">Contactez-nous</h1>
-        <p>N'hésitez pas à nous écrire pour tout renseignement. Nous répondons sous 48h.</p>
 
-        <ul class="contact__details">
-          <li>
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-            <span>123 rue Example, 75000 Paris</span>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone" aria-hidden="true"></i>
-            <a href="tel:+33100000000">+33 1 00 00 00 00</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:contact@societe.fr">contact@societe.fr</a>
-          </li>
-        </ul>
+        <h1 class="contact__title">Contact</h1>
+
+        <p class="contact__desc">
+          Vragen over ons programma, een
+          samenwerking, of gewoon hallo zeggen?
+          <strong>We horen graag van je.</strong>
+        </p>
+
+        <div class="contact__details">
+
+          <div class="contact__detail-item">
+            <div class="contact__icon-wrap">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact__detail-label">E-mailadres</p>
+              <a href="mailto:info@dansdichterdans.be" class="contact__detail-value">
+                info@dansdichterdans.be
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__detail-item">
+            <div class="contact__icon-wrap">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact__detail-label">Telefoonnummer</p>
+              <a href="tel:+32488868211" class="contact__detail-value">
+                +32 488 86 82 11
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <form class="contact__form" id="contact-form" novalidate>
-        <div class="form-group">
-          <label for="name">Nom complet <span aria-hidden="true">*</span></label>
-          <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
-        </div>
+      <!-- ===== COLONNE DROITE — FORMULAIRE ===== -->
+      <div class="contact__form-card">
+        <form id="contact-form" novalidate>
 
-        <div class="form-group">
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required>
-        </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="naam">Naam<span>*</span></label>
+              <input type="text" id="naam" name="naam" placeholder="Joe doe" required>
+            </div>
+            <div class="form-group">
+              <label for="voornaam">Voornaam<span>*</span></label>
+              <input type="text" id="voornaam" name="voornaam" placeholder="Radie" required>
+            </div>
+          </div>
 
-        <div class="form-group">
-          <label for="subject">Sujet</label>
-          <input type="text" id="subject" name="subject" placeholder="Demande d'information">
-        </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-Mailadres<span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="Joe.radie@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefoon">Telefoonnummer</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="+ 123 467 890">
+            </div>
+          </div>
 
-        <div class="form-group">
-          <label for="message">Message <span aria-hidden="true">*</span></label>
-          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
-        </div>
+          <div class="form-group">
+            <label for="bericht">Bericht<span>*</span></label>
+            <textarea id="bericht" name="bericht" rows="5" placeholder="Uw bericht" required></textarea>
+          </div>
 
-        <button type="submit" class="btn btn--primary btn--full">
-          Envoyer le message
-          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-        </button>
+          <button type="submit" class="btn-verzenden">Verzenden</button>
 
-        <p class="form__success" id="form-success" role="alert" hidden>
-          ✅ Merci ! Votre message a bien été envoyé.
-        </p>
-      </form>
+        </form>
+      </div>
 
     </div>
   </main>
