@@ -1,3 +1,9 @@
+/*
+ * layout.css
+ * Styles globaux de mise en page : reset, conteneur, navbar, menu mobile et footer.
+ * Commun à toutes les pages.
+ */
+
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html  { scroll-behavior: smooth; scroll-padding-top: var(--navbar-height); }
@@ -160,8 +166,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 
 /* ================================================
-   FOOTER — à intégrer dans layout.css
-   Remplace tout le bloc "FOOTER" existant
+   FOOTER 
    ================================================ */
 
 .footer {
@@ -278,7 +283,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE */
 @media (max-width: 768px) {
   .navbar__burger { display: flex; }
   .navbar__nav {

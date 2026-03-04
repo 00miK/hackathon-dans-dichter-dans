@@ -1,3 +1,9 @@
+/*
+ * variables.css
+ * Tokens de design globaux : couleurs, typographie, espacements et effets.
+ * À adapter selon l'identité visuelle du client.
+ */
+
 :root {
   /* --- Couleurs — à adapter au client --- */
   --color-primary:    #1a1a2e;

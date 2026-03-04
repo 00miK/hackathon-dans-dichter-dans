@@ -43,25 +43,25 @@
           <!-- Colonne gauche -->
           <div>
             <p class="apropos-hero__desc">
-              Nous sommes une plateforme et un événement qui réunit des artistes littéraires
-              et musiciens émergents dans un espace plus sûr, propice à l'expérimentation.
-              Il en résulte des performances de grande qualité pour un large public.
-              Nous nous efforçons de représenter la richesse et la diversité de la société
-              flamande et d'être facilement accessibles à tous.
+              Wij zijn een platform en een evenement dat opkomende literaire kunstenaars
+              en muzikanten samenbrengt in een veilige ruimte die uitnodigt tot experimenteren.
+              Dit resulteert in hoogwaardige optredens voor een breed publiek.
+              We streven ernaar de rijkdom en diversiteit van de Vlaamse samenleving te vertegenwoordigen
+              en voor iedereen gemakkelijk toegankelijk te zijn.
             </p>
             <p class="apropos-hero__desc">
-              Nous programmons régulièrement des scènes mêlant littérature et musique,
-              dans l'ambiance et l'énergie d'un festival de musique. Pour chaque édition,
-              notre comité de sélection et de programmation part à la recherche de nouveaux
-              talents littéraires.
+              We programmeren regelmatig optredens waarin literatuur en muziek worden gecombineerd,
+              in de sfeer en energie van een muziekfestival. Voor elke editie gaat
+              onze selectie- en programmacommissie op zoek naar nieuw
+              literair talent.
             </p>
           </div>
 
           <!-- Colonne droite -->
           <div class="apropos-hero__right-col">
             <blockquote class="apropos-quote">
-              <p>Nous programmons régulièrement des soirées mêlant littérature et musique, dans l'ambiance et l'énergie d'un festival de musique. Pour chaque édition, notre comité de sélection et de programmation part à la recherche de nouveaux talents littéraires.</p>
-              <cite>— Mevrow la proprio</cite>
+              <p>We organiseren regelmatig avonden waarop literatuur en muziek worden gecombineerd, in de sfeer en energie van een muziekfestival. Voor elke editie gaat ons selectie- en programmacomité op zoek naar nieuw literair talent.</p>
+              <cite>— Mevrow </cite>
             </blockquote>
           </div>
 
@@ -89,8 +89,8 @@
                  src="/PROJET-SOCIETE/assets/img/a1.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -99,8 +99,8 @@
                  src="/PROJET-SOCIETE/assets/img/a2.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -109,8 +109,8 @@
                  src="/PROJET-SOCIETE/assets/img/a3.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -119,8 +119,8 @@
                  src="/PROJET-SOCIETE/assets/img/a4.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -129,8 +129,8 @@
                  src="/PROJET-SOCIETE/assets/img/a5.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -139,8 +139,8 @@
                  src="/PROJET-SOCIETE/assets/img/a6.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -149,8 +149,8 @@
                  src="/PROJET-SOCIETE/assets/img/a7.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -159,8 +159,8 @@
                  src="/PROJET-SOCIETE/assets/img/a8.jpeg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -169,8 +169,8 @@
                  src="/PROJET-SOCIETE/assets/img/a9.jpeg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -179,8 +179,8 @@
                  src="/PROJET-SOCIETE/assets/img/a10.jpeg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
-              <p class="team-card__role">PROFESSION</p>
+              <p class="team-card__name"><span class="team-card__firstname">naam</span> <strong>voornaam</strong></p>
+              <p class="team-card__role">BEROEP</p>
             </div>
           </article>
 
@@ -199,31 +199,31 @@
 
         <div class="partenaire__inner">
           <p class="partenaire__intro">
-            Dans! Dichter! Dans! ne dispose pas de salle propre, mais peut organiser des
-            activités dans des lieux existants ou avec des partenaires. Le contenu de ces
-            activités peut être élaboré par nous ou par le coproducteur.
+            Dans! Dichter! Dans! beschikt niet over een eigen zaal, maar kan activiteiten organiseren
+            in bestaande locaties of met partners. De inhoud van deze
+            activiteiten kan door ons of door de coproducent worden uitgewerkt.
           </p>
           <p class="partenaire__intro">
-            De plus, en tant que maison de production, nous sommes à la disposition des créateurs
-            souhaitant développer avec nous une production littéraire et musicale.
+            Bovendien staan wij als productiehuis ter beschikking van creatieve geesten
+            die samen met ons een literaire en muzikale productie willen ontwikkelen.
           </p>
 
-          <h2 class="partenaire__subtitle">Nos attentes :</h2>
+          <h2 class="partenaire__subtitle">Onze verwachtingen:</h2>
           <ul class="partenaire__list">
-            <li>Engagement en temps opportun</li>
-            <li>Accords financiers et organisationnels clairs</li>
+            <li>Tijdige inzet</li>
+            <li>Duidelijke financiële en organisatorische afspraken</li>
             <li>
-              Collaboration pour l'organisation, la communication promotionnelle,
-              l'assistance pratique pendant l'activité et le suivi post-événement.
+              Samenwerking voor de organisatie, promotionele communicatie,
+              praktische ondersteuning tijdens de activiteit en follow-up na het evenement.
             </li>
             <li>
-              Mention claire et précise de tous les partenaires dans la communication
-              et pendant l'activité. Visibilité proportionnelle à la contribution.
+              Duidelijke en nauwkeurige vermelding van alle partners in de communicatie
+              en tijdens de activiteit. Zichtbaarheid in verhouding tot de bijdrage.
             </li>
           </ul>
 
           <p class="partenaire__contact">
-            Contactez-nous par courrier :
+            Neem contact met ons op per post:
             <a href="mailto:info@dansdichterdans.be">info@dansdichterdans.be</a>
           </p>
         </div>

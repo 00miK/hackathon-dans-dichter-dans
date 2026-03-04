@@ -1,9 +1,10 @@
-/* ================================================
-   A-PROPOS.CSS — Styles spécifiques à about.php
-   ================================================ */
+/*
+ * a-propos.css
+ * Styles de la page À propos : section "Who we are", équipe, partenaires
+ * et décorations organiques roses.
+ */
 
-
-/* ===== TITRE CURSIF DÉCORATIF (commun aux 3 sections) ===== */
+/* ===== TITRE CURSIF DÉCORATIF  ===== */
 .apropos-cursive {
   display: block;
   font-family: var(--font-heading);
@@ -77,7 +78,6 @@
   overflow: hidden;
 }
 
-/* Image pleine largeur en haut — plus large que le container */
 .apropos-banner-img {
   margin-top: 16px;
   position: relative;

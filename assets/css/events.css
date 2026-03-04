@@ -1,7 +1,8 @@
-/* ================================================
-   EVENTS.CSS — Styles spécifiques à events.php
-   ================================================ */
-
+/*
+ * events.css
+ * Styles de la page événement : hero image, informations, line-up
+ * et section médias (vidéos + photos).
+ */
 
 /* ===== HERO ===== */
 .ev-hero {
@@ -66,7 +67,7 @@
 }
 
 
-/* ===== DECORATIVE BLOBS (outside hero, on page) ===== */
+/* ===== DECORATIVE BLOBS  ===== */
 .ev-deco {
   position: absolute;
   pointer-events: none;
@@ -278,7 +279,6 @@
   transition: transform 0.4s ease;
 }
 
-/* Deuxième image (e1.jpeg) s'étire jusqu'au bas de la 2e vidéo */
 .ev-media__img-wrap:last-child {
   flex: 1;
   min-height: 0;

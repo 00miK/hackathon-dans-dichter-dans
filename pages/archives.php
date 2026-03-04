@@ -180,9 +180,9 @@
           </div>
         </div>
 
-      </div><!-- .timeline -->
+      </div>
 
-    </div><!-- .container -->
+    </div>
   </main>
 
   <?php include __DIR__ . '/../includes/footer.php'; ?>

@@ -1,6 +1,9 @@
+/*
+ * main.css
+ * Point d'entrée CSS — importe tous les fichiers partiels du projet
+ * et déclare les polices locales (Aileron, HomemadeApple).
+ */
 
-
-/* Les @import DOIVENT être en premier */
 @import 'variables.css';
 @import 'layout.css';
 @import 'home.css';

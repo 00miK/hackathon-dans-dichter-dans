@@ -1,6 +1,8 @@
-/* ================================================
-   ARCHIVES.CSS — Styles spécifiques à archives.php
-   ================================================ */
+/*
+ * archives.css
+ * Styles de la page archives : timeline verticale, cartes d'événements
+ * et animation d'apparition au scroll (.reveal).
+ */
 
 /* ===== HEADER DE PAGE ===== */
 .archives-page {

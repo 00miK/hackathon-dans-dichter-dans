@@ -1,7 +1,8 @@
-/* ================================================
-   HOME.CSS — Styles spécifiques à index.php
-   ================================================ */
-
+/*
+ * home.css
+ * Styles de la page d'accueil : boutons, hero vidéo, section "Over Ons",
+ * événements à venir et statistiques d'impact.
+ */
 
 /* ===== BOUTONS ===== */
 .btn {
@@ -307,7 +308,7 @@
 
 /* ===== IMPACT IN CIJFERS ===== */
 .impact {
-  padding-bottom: 15rem;  /* augmente ce chiffre jusqu'au rendu voulu */
+  padding-bottom: 15rem;  
 }
 
 .impact__title {
