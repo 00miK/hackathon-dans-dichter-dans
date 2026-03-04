@@ -187,30 +187,5 @@
 
   <?php include __DIR__ . '/../includes/footer.php'; ?>
 
-  <script>
-    /* Marque le lien Archives comme actif */
-    document.querySelectorAll('.navbar__link').forEach(function(link) {
-      if (link.getAttribute('href') && link.getAttribute('href').indexOf('archives') !== -1) {
-        link.classList.add('navbar__link--active');
-      }
-    });
-
-    /* Intersection Observer pour l'animation .reveal (fade-in up) */
-    (function() {
-      var obs = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      document.querySelectorAll('.reveal').forEach(function(el) {
-        obs.observe(el);
-      });
-    })();
-  </script>
-
 </body>
 </html>

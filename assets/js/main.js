@@ -87,3 +87,24 @@ if (form) {
 /* ===== 6. ANNEE FOOTER ===== */
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* ===== 7. ARCHIVES — lien actif ===== */
+document.querySelectorAll('.navbar__link').forEach(function(link) {
+  if (link.getAttribute('href') && link.getAttribute('href').indexOf('archives') !== -1) {
+    link.classList.add('navbar__link--active');
+  }
+});
+
+/* ===== 8. ARCHIVES — animation .reveal (fade-in up) ===== */
+const revealObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(function(el) {
+  revealObserver.observe(el);
+});
