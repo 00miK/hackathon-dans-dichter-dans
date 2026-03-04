@@ -1,5 +1,3 @@
-
-
 /* ===== 1. NAVBAR ===== */
 const navbar = document.getElementById("navbar");
 if (navbar) {
@@ -65,22 +63,27 @@ const style = document.createElement("style");
 style.textContent = ".fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; } .fade-in.visible { opacity: 1; transform: translateY(0); }";
 document.head.appendChild(style);
 
-/* ===== 5. FORMULAIRE DE CONTACT ===== */
+/* ===== 5. FORMULAIRE DE CONTACT — Formspree ===== */
 const form = document.getElementById("contact-form");
 if (form) {
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const name    = document.getElementById("name").value.trim();
-    const email   = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-    if (!name || !email || !message) { alert("Merci de remplir tous les champs."); return; }
-    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!emailOk) { alert("Adresse email invalide."); return; }
-    form.reset();
-    document.getElementById("form-success").hidden = false;
+    const data     = new FormData(form);
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    });
+    if (response.ok) {
+      form.reset();
+      const success = document.getElementById("form-success");
+      if (success) success.hidden = false;
+    } else {
+      alert("Er is een fout opgetreden. Probeer het opnieuw.");
+    }
   });
 }
 
 /* ===== 6. ANNEE FOOTER ===== */
 const yearEl = document.getElementById("year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();  
+if (yearEl) yearEl.textContent = new Date().getFullYear();

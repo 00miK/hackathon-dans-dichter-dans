@@ -61,7 +61,7 @@
 
       <!-- ===== COLONNE DROITE — FORMULAIRE ===== -->
       <div class="contact__form-card">
-        <form id="contact-form" novalidate>
+        <form id="contact-form" action="https://formspree.io/f/xeelyywe" method="POST" novalidate>
 
           <div class="form-row">
             <div class="form-group">
@@ -91,6 +91,7 @@
           </div>
 
           <button type="submit" class="btn-verzenden">Verzenden</button>
+          <p id="form-success" hidden style="color:green; margin-top:1rem;">✓ Bericht verzonden! We nemen snel contact met je op.</p>
 
         </form>
       </div>
