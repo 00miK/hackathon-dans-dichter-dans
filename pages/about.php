@@ -65,7 +65,6 @@
               notre comité de sélection et de programmation part à la recherche de nouveaux
               talents littéraires.
             </p>
-            <a href="/PROJET-SOCIETE/contact.php" class="btn btn--pink">Montre le projet</a>
           </div>
 
         </div>
@@ -89,7 +88,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a1.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -99,7 +98,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a2.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -109,7 +108,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a3.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -119,7 +118,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a4.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -129,7 +128,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a5.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -139,7 +138,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a6.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -149,7 +148,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a7.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
@@ -204,16 +203,17 @@
           <p class="partenaire__intro">
             Dans! Dichter! Dans! ne dispose pas de salle propre, mais peut organiser des
             activités dans des lieux existants ou avec des partenaires. Le contenu de ces
-            activités peut être élaboré par nous ou par des partenaires.
+            activités peut être élaboré par nous ou par le coproducteur.
           </p>
           <p class="partenaire__intro">
-            En tant que maison de production, nous sommes à la disposition des créateurs
+            De plus, en tant que maison de production, nous sommes à la disposition des créateurs
             souhaitant développer avec nous une production littéraire et musicale.
           </p>
 
           <h2 class="partenaire__subtitle">Nos attentes :</h2>
           <ul class="partenaire__list">
             <li>Engagement en temps opportun</li>
+            <li>Accords financiers et organisationnels clairs</li>
             <li>
               Collaboration pour l'organisation, la communication promotionnelle,
               l'assistance pratique pendant l'activité et le suivi post-événement.
