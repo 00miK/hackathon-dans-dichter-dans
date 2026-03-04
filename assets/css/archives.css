@@ -1,0 +1,219 @@
+/* ================================================
+   ARCHIVES.CSS — Styles spécifiques à archives.php
+   ================================================ */
+
+/* ===== HEADER DE PAGE ===== */
+.archives-page {
+  padding-top: calc(var(--navbar-height) + 2rem);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.archives-page__title {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  color: #FFC6FE;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 29px;
+}
+
+/* ===== DÉCORATIONS ROSES (tâches de peinture) ===== */
+.archives-deco {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  font-family: var(--font-heading);
+  color: #FFC6FE;
+  opacity: 0.35;
+  line-height: 1;
+  user-select: none;
+}
+.archives-deco--tr {
+  top: 15%;
+  right: -2rem;
+  font-size: 18rem;
+  transform: rotate(10deg);
+}
+.archives-deco--mr {
+  top: 45%;
+  right: -1rem;
+  font-size: 14rem;
+  transform: rotate(-5deg);
+}
+.archives-deco--br {
+  bottom: 20%;
+  right: -2rem;
+  font-size: 16rem;
+  transform: rotate(8deg);
+}
+.archives-deco--ml {
+  top: 55%;
+  left: -1rem;
+  font-size: 12rem;
+  transform: rotate(-12deg);
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative;
+  padding-left: 5rem;
+  margin-bottom: 4rem;
+}
+
+/* Ligne verticale fine */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #ddd;
+}
+
+/* ===== ANNÉE ===== */
+.timeline__year-block {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline__year-marker {
+  position: absolute;
+  left: -3.2rem;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #555;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 2;
+  /* Ligne horizontale vers la droite */
+}
+.timeline__year-marker::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: 1.2rem;
+  height: 1px;
+  background: #bbb;
+}
+
+/* Tirets à gauche de la ligne (décoratifs) */
+.timeline__ticks {
+  position: absolute;
+  left: -3.5rem;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.timeline__ticks span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  background: #ccc;
+}
+
+/* ===== GRILLE D'ÉVÉNEMENTS ===== */
+.timeline__events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== CARTE ÉVÉNEMENT ===== */
+.event-archive-card {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.event-archive-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+}
+.event-archive-card__img {
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.event-archive-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.event-archive-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+.event-archive-card__title {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+.event-archive-card__date {
+  font-size: 0.8rem;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.event-archive-card__desc {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.55;
+  flex: 1;
+}
+.event-archive-card__btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: #FFC6FE;
+  color: #1a1a1a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  transition: filter 0.2s;
+  text-decoration: none;
+}
+.event-archive-card__btn:hover {
+  filter: brightness(0.9);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .timeline__events-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .timeline { padding-left: 3.5rem; }
+  .archives-deco { display: none; }
+  .event-archive-card { flex-direction: column; }
+  .event-archive-card__img { width: 100%; height: 160px; }
+}

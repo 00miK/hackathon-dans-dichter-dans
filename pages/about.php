@@ -156,7 +156,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a8.jpeg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
@@ -166,7 +166,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a9.jpeg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
@@ -176,7 +176,7 @@
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 src="/PROJET-SOCIETE/assets/img/a10.jpeg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
