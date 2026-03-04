@@ -59,12 +59,10 @@
 
           <!-- Colonne droite -->
           <div class="apropos-hero__right-col">
-            <p class="apropos-hero__desc">
-              Nous programmons régulièrement des scènes mêlant littérature et musique,
-              dans l'ambiance et l'énergie d'un festival de musique. Pour chaque édition,
-              notre comité de sélection et de programmation part à la recherche de nouveaux
-              talents littéraires.
-            </p>
+            <blockquote class="apropos-quote">
+              <p>Nous programmons régulièrement des soirées mêlant littérature et musique, dans l'ambiance et l'énergie d'un festival de musique. Pour chaque édition, notre comité de sélection et de programmation part à la recherche de nouveaux talents littéraires.</p>
+              <cite>— Mevrow la proprio</cite>
+            </blockquote>
           </div>
 
         </div>
@@ -91,8 +89,8 @@
                  src="/PROJET-SOCIETE/assets/img/a1.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -101,8 +99,8 @@
                  src="/PROJET-SOCIETE/assets/img/a2.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -111,8 +109,8 @@
                  src="/PROJET-SOCIETE/assets/img/a3.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -121,8 +119,8 @@
                  src="/PROJET-SOCIETE/assets/img/a4.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -131,8 +129,8 @@
                  src="/PROJET-SOCIETE/assets/img/a5.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -141,8 +139,8 @@
                  src="/PROJET-SOCIETE/assets/img/a6.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -151,8 +149,8 @@
                  src="/PROJET-SOCIETE/assets/img/a7.png"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -161,8 +159,8 @@
                  src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -171,8 +169,8 @@
                  src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
@@ -181,8 +179,8 @@
                  src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
-              <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Profession</p>
+              <p class="team-card__name"><span class="team-card__firstname">nom</span> <strong>prénom</strong></p>
+              <p class="team-card__role">PROFESSION</p>
             </div>
           </article>
 
