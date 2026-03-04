@@ -56,55 +56,55 @@
       <div class="container">
         <div class="events__header">
           <h2 class="events__title">Komende events</h2>
-          <a href="/PROJET-SOCIETE/pages/events.php" class="btn btn--pink">Meer over ons</a>
+          <a href="/PROJET-SOCIETE/pages/events.php" class="btn btn--pink">Bekijk alle events</a>
         </div>
         <div class="events__grid">
 
           <article class="event-card fade-in">
             <div class="event-card__img">
-              <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! 2026">
+              <img src="/PROJET-SOCIETE/assets/img/hp1.jpeg" alt="Dans! Dichter! Dans! 2026">
             </div>
             <div class="event-card__body">
               <h3 class="event-card__title">Dans! Dichter! Dans! 2026</h3>
-              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 12 maart 2026</p>
-              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Brussel</p>
-              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen.</p>
+              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 12 maart 2026 - 20:00</p>
+              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Heilig-Hartstraat 16, 9040 Sint-Amandsberg</p>
+              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen. Ontdek krachtige verhalen en unieke performances van opkomende artiesten.</p>
             </div>
           </article>
 
           <article class="event-card fade-in">
             <div class="event-card__img">
-              <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! 2026">
+              <img src="/PROJET-SOCIETE/assets/img/hp2.jpeg" alt="Dans! Dichter! Dans! 2026">
             </div>
             <div class="event-card__body">
-              <h3 class="event-card__title">Dans! Dichter! Dans! 2026</h3>
-              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 12 maart 2026</p>
-              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Brussel</p>
-              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen.</p>
+              <h3 class="event-card__title">Open Mic Night</h3>
+              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 18 april 2026 — 19:30</p>
+              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Triomflaan 8, 1160 Brussel</p>
+              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen. Ontdek krachtige verhalen en unieke performances van opkomende artiesten.</p>
             </div>
           </article>
 
           <article class="event-card fade-in">
             <div class="event-card__img">
-              <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! 2026">
+              <img src="/PROJET-SOCIETE/assets/img/hp3.jpeg" alt="Dans! Dichter! Dans! 2026">
             </div>
             <div class="event-card__body">
-              <h3 class="event-card__title">Dans! Dichter! Dans! 2026</h3>
-              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 12 maart 2026</p>
-              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Brussel</p>
-              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen.</p>
+              <h3 class="event-card__title">Poetry & Performance Night</h3>
+              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 7 juni 2026 — 20:30</p>
+              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Anspachlaan 110, 1000 Brussel</p>
+              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen. Ontdek krachtige verhalen en unieke performances van opkomende artiesten..</p>
             </div>
           </article>
 
           <article class="event-card fade-in">
             <div class="event-card__img">
-              <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! 2026">
+              <img src="/PROJET-SOCIETE/assets/img/hp4.jpeg" alt="Dans! Dichter! Dans! 2026">
             </div>
             <div class="event-card__body">
-              <h3 class="event-card__title">Dans! Dichter! Dans! 2026</h3>
-              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 12 maart 2026</p>
-              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Brussel</p>
-              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen.</p>
+              <h3 class="event-card__title">Summer Spoken Word Session</h3>
+              <p class="event-card__meta"><i class="fa-regular fa-calendar"></i> 22 augustus 2026 — 19:00</p>
+              <p class="event-card__meta"><i class="fa-solid fa-location-dot"></i> Adolphe Lavalléestraat 39, 1080 Brussel</p>
+              <p class="event-card__desc">Een avond vol spoken word, performance en nieuwe stemmen. Ontdek krachtige verhalen en unieke performances van opkomende artiesten.</p>
             </div>
           </article>
 
