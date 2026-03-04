@@ -68,15 +68,15 @@
           <div class="ev-lineup__photos">
 
             <div class="ev-lineup__photo-wrap">
-              <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Artiest 1">
+              <img src="/PROJET-SOCIETE/assets/img/e3.png" alt="Artiest 1">
             </div>
 
             <div class="ev-lineup__photo-wrap">
-              <img src="/PROJET-SOCIETE/assets/img/hp2.jpeg" alt="Artiest 2">
+              <img src="/PROJET-SOCIETE/assets/img/e4.png" alt="Artiest 2">
             </div>
 
             <div class="ev-lineup__photo-wrap">
-              <img src="/PROJET-SOCIETE/assets/img/hp3.jpeg" alt="Artiest 3">
+              <img src="/PROJET-SOCIETE/assets/img/e5.png" alt="Artiest 3">
             </div>
 
           </div>
