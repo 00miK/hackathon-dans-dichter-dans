@@ -125,11 +125,11 @@
           <div class="ev-media__images">
 
             <div class="ev-media__img-wrap">
-              <img src="/PROJET-SOCIETE/assets/img/hp3.jpeg" alt="Media foto 1">
+              <img src="/PROJET-SOCIETE/assets/img/e2.jpeg" alt="Media foto 1">
             </div>
 
             <div class="ev-media__img-wrap">
-              <img src="/PROJET-SOCIETE/assets/img/hp4.jpeg" alt="Media foto 2">
+              <img src="/PROJET-SOCIETE/assets/img/e1.jpeg" alt="Media foto 2">
             </div>
 
           </div>

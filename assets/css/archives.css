@@ -59,76 +59,93 @@
 /* ===== TIMELINE ===== */
 .timeline {
   position: relative;
-  padding-left: 5rem;
+  padding-left: 5.5rem;   /* events grid starts here */
   margin-bottom: 4rem;
 }
 
-/* Ligne verticale fine */
+/* Ligne verticale continue */
 .timeline::before {
   content: '';
   position: absolute;
-  left: 2rem;
+  left: 2.5rem;            /* x-position de la ligne */
   top: 0;
   bottom: 0;
   width: 1px;
   background: #ddd;
 }
 
-/* ===== ANNÉE ===== */
+/* ===== BLOC ANNÉE ===== */
 .timeline__year-block {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;    /* large espace entre les années */
 }
 
+/* ===== CERCLE ANNÉE — centré sur la ligne ===== */
+/*
+  Timeline padding-left: 5.5rem  →  year-block commence à 5.5rem du bord gauche de .timeline
+  Ligne verticale à: 2.5rem du bord gauche de .timeline
+  Cercle: 44px = 2.75rem  →  demi-largeur: 1.375rem
+  Bord gauche du cercle depuis .timeline: 2.5rem - 1.375rem = 1.125rem
+  Depuis le year-block: 1.125rem - 5.5rem = -4.375rem ≈ -4.4rem
+*/
 .timeline__year-marker {
   position: absolute;
-  left: -3.2rem;
+  left: -4.4rem;
   top: 0;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #555;
+  background: #444;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
   z-index: 2;
-  /* Ligne horizontale vers la droite */
 }
+
+/* Connecteur horizontal : bord droit du cercle → début de la grille */
 .timeline__year-marker::before {
   content: '';
   position: absolute;
-  right: 100%;
+  left: 100%;              /* depuis le bord droit du cercle */
   top: 50%;
-  width: 1.2rem;
+  transform: translateY(-50%);
+  width: 1.7rem;           /* rejoint l'espace des événements */
   height: 1px;
   background: #bbb;
 }
 
-/* Tirets à gauche de la ligne (décoratifs) */
+/* ===== TIRETS À GAUCHE DE LA LIGNE ===== */
+/*
+  left: -4.8rem depuis year-block
+  = 5.5rem - 4.8rem = 0.7rem depuis le bord gauche de .timeline
+  → clairement à gauche de la ligne (qui est à 2.5rem)
+*/
 .timeline__ticks {
   position: absolute;
-  left: -3.5rem;
-  top: 3rem;
+  left: -4.8rem;
+  top: 3.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.75rem;
 }
 .timeline__ticks span {
   display: block;
-  width: 16px;
+  width: 18px;
   height: 1.5px;
   background: #ccc;
+  border-radius: 1px;
 }
 
 /* ===== GRILLE D'ÉVÉNEMENTS ===== */
 .timeline__events-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
+  gap: 1.4rem;
   position: relative;
   z-index: 1;
 }
@@ -149,9 +166,9 @@
   box-shadow: 0 6px 24px rgba(0,0,0,0.1);
 }
 .event-archive-card__img {
-  width: 120px;
-  min-width: 120px;
-  height: 120px;
+  width: 145px;
+  min-width: 145px;
+  height: 145px;
   border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
@@ -207,13 +224,54 @@
   filter: brightness(0.9);
 }
 
+/* ===== LIEN NAV ACTIF (Archives) ===== */
+.navbar__link--active::after {
+  width: 100% !important;
+}
+.navbar__link--active {
+  font-weight: 700;
+}
+
+/* ===== PREMIER MARQUEUR (2015) en rose ===== */
+.timeline__year-block:first-child .timeline__year-marker {
+  background: #FFC6FE;
+  color: #1a1a1a;
+}
+
+/* ===== REVEAL ANIMATION (Intersection Observer) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+  transition-delay: var(--reveal-delay, 0s);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .timeline__events-grid { grid-template-columns: 1fr; }
 }
+
 @media (max-width: 600px) {
   .timeline { padding-left: 3.5rem; }
+  .timeline::before { left: 1.5rem; }
+  .timeline__year-marker {
+    left: calc(-3.5rem + 1.5rem - 22px);
+    width: 38px;
+    height: 38px;
+    font-size: 0.68rem;
+  }
+  .timeline__ticks { left: -3.2rem; }
   .archives-deco { display: none; }
   .event-archive-card { flex-direction: column; }
-  .event-archive-card__img { width: 100%; height: 160px; }
+  .event-archive-card__img { width: 100%; height: 180px; min-width: unset; }
+}
+
+@media (max-width: 480px) {
+  .timeline { padding-left: 3rem; }
+  .timeline__year-block { margin-bottom: 4rem; }
+  .timeline__events-grid { gap: 1rem; }
 }

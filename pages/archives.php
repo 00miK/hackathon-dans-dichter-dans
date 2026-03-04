@@ -22,22 +22,23 @@
 
       <h1 class="archives-page__title">Archives</h1>
 
-      <!-- ========================
-           2015
-      ======================== -->
       <div class="timeline">
 
+        <!-- ========================
+             2015
+        ======================== -->
         <div class="timeline__year-block">
           <div class="timeline__year-marker">2015</div>
           <div class="timeline__ticks">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
+            <span></span><span></span>
           </div>
           <div class="timeline__events-grid">
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #2">
+                <img src="/PROJET-SOCIETE/assets/img/e1.jpeg" alt="Dans! Dichter! Dans! #2">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #2</h3>
@@ -47,9 +48,9 @@
               </div>
             </article>
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #4">
+                <img src="/PROJET-SOCIETE/assets/img/e2.jpeg" alt="Dans! Dichter! Dans! #4">
               </div>
               <div class="event-archive-card__body">
                 <h3 class="event-archive-card__title">Dans! Dichter! Dans! #4</h3>
@@ -70,10 +71,11 @@
           <div class="timeline__ticks">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
+            <span></span><span></span>
           </div>
           <div class="timeline__events-grid">
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
                 <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #5">
               </div>
@@ -85,7 +87,7 @@
               </div>
             </article>
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
                 <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #6">
               </div>
@@ -108,10 +110,11 @@
           <div class="timeline__ticks">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
+            <span></span><span></span>
           </div>
           <div class="timeline__events-grid">
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
                 <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #12">
               </div>
@@ -123,12 +126,12 @@
               </div>
             </article>
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
-                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #6">
+                <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #9">
               </div>
               <div class="event-archive-card__body">
-                <h3 class="event-archive-card__title">Dans! Dichter! Dans! #6</h3>
+                <h3 class="event-archive-card__title">Dans! Dichter! Dans! #9</h3>
                 <p class="event-archive-card__date"><i class="fa-regular fa-calendar"></i> 15/03/2017</p>
                 <p class="event-archive-card__desc">We doopten de refter van Conservatorium Antwerpen om tot 'Club Cons'.</p>
                 <a href="#" class="event-archive-card__btn">Bekijk de video</a>
@@ -146,10 +149,11 @@
           <div class="timeline__ticks">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
+            <span></span><span></span>
           </div>
           <div class="timeline__events-grid">
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0s">
               <div class="event-archive-card__img">
                 <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #14">
               </div>
@@ -161,7 +165,7 @@
               </div>
             </article>
 
-            <article class="event-archive-card">
+            <article class="event-archive-card reveal" style="--reveal-delay: 0.12s">
               <div class="event-archive-card__img">
                 <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg" alt="Dans! Dichter! Dans! #15">
               </div>
@@ -182,6 +186,31 @@
   </main>
 
   <?php include __DIR__ . '/../includes/footer.php'; ?>
+
+  <script>
+    /* Marque le lien Archives comme actif */
+    document.querySelectorAll('.navbar__link').forEach(function(link) {
+      if (link.getAttribute('href') && link.getAttribute('href').indexOf('archives') !== -1) {
+        link.classList.add('navbar__link--active');
+      }
+    });
+
+    /* Intersection Observer pour l'animation .reveal (fade-in up) */
+    (function() {
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        obs.observe(el);
+      });
+    })();
+  </script>
 
 </body>
 </html>
