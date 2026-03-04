@@ -13,18 +13,35 @@
 
   <main>
 
-    <!-- ===== WHO WE ARE ===== -->
+    <!-- ===================================================
+         WHO WE ARE
+    =================================================== -->
     <section class="apropos-hero">
+
+      <!-- Blobs décoratifs roses — côté gauche -->
+      <div class="apropos-blob apropos-blob--l1" aria-hidden="true"></div>
+      <div class="apropos-blob apropos-blob--l2" aria-hidden="true"></div>
+
       <div class="container">
 
-        <span class="apropos-cursive">About Us</span>
+        <!-- Image large en haut -->
+        <div class="apropos-banner-img">
+          <img src="/PROJET-SOCIETE/assets/img/about.jpeg"
+               alt="Répétition — Dans! Dichter! Dans!">
+        </div>
 
-        <div class="apropos-hero__grid">
+        <!-- Titre -->
+        <div class="apropos-hero__title-area">
+          <span class="apropos-cursive">About Us</span>
+          <h1 class="apropos-hero__title">Who we are ?</h1>
+          <p class="apropos-hero__company">Dans! Dichter! Dans!</p>
+        </div>
 
-          <!-- Colonne gauche : texte -->
-          <div class="apropos-hero__text">
-            <h1 class="apropos-hero__title">Who we are ?</h1>
-            <p class="apropos-hero__company">Dans! Dichter! Dans!</p>
+        <!-- Texte en 2 colonnes -->
+        <div class="apropos-hero__text-grid">
+
+          <!-- Colonne gauche -->
+          <div>
             <p class="apropos-hero__desc">
               Nous sommes une plateforme et un événement qui réunit des artistes littéraires
               et musiciens émergents dans un espace plus sûr, propice à l'expérimentation.
@@ -40,21 +57,15 @@
             </p>
           </div>
 
-          <!-- Colonne droite : image + citation -->
-          <div class="apropos-hero__right">
-            <div class="apropos-hero__image">
-              <img src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
-                   alt="Répétition musicale — Dans! Dichter! Dans!">
-            </div>
-            <div class="apropos-quote">
-              <p class="apropos-quote__text">
-                Nous programmons régulièrement des scènes mêlant littérature et musique,
-                dans l'ambiance et l'énergie d'un festival de musique. Pour chaque édition,
-                notre comité de sélection et de programmation part à la recherche de nouveaux
-                talents littéraires.
-              </p>
-              <a href="#" class="btn btn--pink">Montre le projet</a>
-            </div>
+          <!-- Colonne droite -->
+          <div class="apropos-hero__right-col">
+            <p class="apropos-hero__desc">
+              Nous programmons régulièrement des scènes mêlant littérature et musique,
+              dans l'ambiance et l'énergie d'un festival de musique. Pour chaque édition,
+              notre comité de sélection et de programmation part à la recherche de nouveaux
+              talents littéraires.
+            </p>
+            <a href="/PROJET-SOCIETE/contact.php" class="btn btn--pink">Montre le projet</a>
           </div>
 
         </div>
@@ -62,9 +73,15 @@
     </section>
 
 
-    <!-- ===== THE TEAM ===== -->
-    <section class="section section--alt">
-      <div class="container">
+    <!-- ===================================================
+         THE TEAM
+    =================================================== -->
+    <section class="section section--alt section--team">
+      <div class="container" style="position: relative;">
+
+        <!-- Blobs décoratifs roses — côté droit -->
+        <div class="apropos-blob apropos-blob--r1" aria-hidden="true"></div>
+        <div class="apropos-blob apropos-blob--r2" aria-hidden="true"></div>
 
         <span class="apropos-cursive">the team</span>
 
@@ -76,27 +93,97 @@
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Rôle</p>
+              <p class="team-card__role">Profession</p>
             </div>
           </article>
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/images/team-2.jpg"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Rôle</p>
+              <p class="team-card__role">Profession</p>
             </div>
           </article>
 
           <article class="team-card">
             <img class="team-card__photo"
-                 src="/PROJET-SOCIETE/assets/images/team-3.jpg"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
                  alt="Membre de l'équipe">
             <div class="team-card__body">
               <p class="team-card__name">Prénom Nom</p>
-              <p class="team-card__role">Rôle</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <img class="team-card__photo"
+                 src="/PROJET-SOCIETE/assets/img/event-placeholder.jpg"
+                 alt="Membre de l'équipe">
+            <div class="team-card__body">
+              <p class="team-card__name">Prénom Nom</p>
+              <p class="team-card__role">Profession</p>
             </div>
           </article>
 
@@ -105,7 +192,9 @@
     </section>
 
 
-    <!-- ===== PARTENAIRE ===== -->
+    <!-- ===================================================
+         PARTENAIRE ?
+    =================================================== -->
     <section class="section">
       <div class="container">
 
@@ -137,7 +226,7 @@
 
           <p class="partenaire__contact">
             Contactez-nous par courrier :
-            <a href="mailto:info@dansdichterans.be">info@dansdichterans.be</a>
+            <a href="mailto:info@dansdichterdans.be">info@dansdichterdans.be</a>
           </p>
         </div>
 

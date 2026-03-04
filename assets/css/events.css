@@ -1,0 +1,298 @@
+/* ================================================
+   EVENTS.CSS — Styles spécifiques à events.php
+   ================================================ */
+
+
+/* ===== HERO ===== */
+.ev-hero {
+  width: 100%;
+  padding-top: var(--navbar-height);
+  position: relative;
+}
+
+.ev-hero__wrapper {
+  position: relative;
+  width: calc(100% - 4rem);
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-top: 3rem; /* ← AJUSTEZ ICI : espace entre la navbar et l'image (ex: 1rem, 2rem, 4rem…) */
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 520px;
+  background: url('/PROJET-SOCIETE/assets/img/hp1.jpeg') center/cover no-repeat;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+
+.ev-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.70) 0%,
+    rgba(0,0,0,0.35) 60%,
+    rgba(0,0,0,0.15) 100%
+  );
+  z-index: 1;
+}
+
+.ev-hero__content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3.5rem 3.5rem;
+}
+
+.ev-hero__cursive {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: #FFC6FE;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.ev-hero__info {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.01em;
+}
+
+
+/* ===== DECORATIVE BLOBS (outside hero, on page) ===== */
+.ev-deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ev-deco--tr {
+  top: calc(var(--navbar-height) + 1rem);
+  right: 0;
+  width: 160px;
+  height: 280px;
+  background: #fce7f3;
+  border-radius: 42% 58% 55% 45% / 25% 30% 70% 75%;
+  transform: rotate(12deg) translateX(40%);
+  opacity: 0.8;
+}
+
+.ev-deco--mr {
+  top: calc(var(--navbar-height) + 220px);
+  right: 0;
+  width: 90px;
+  height: 180px;
+  background: #FFC6FE;
+  border-radius: 50% 50% 40% 60% / 35% 55% 45% 65%;
+  transform: rotate(-6deg) translateX(35%);
+  opacity: 0.65;
+}
+
+
+/* ===== SECTION TITRE ÉVÉNEMENT ===== */
+.ev-title-section {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
+.ev-main-title {
+  font-family: var(--font-body);
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.ev-main-meta {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+
+/* ===== OVER HET EVENEMENT + LINE-UP ===== */
+.ev-info-section {
+  padding-bottom: var(--space-xl);
+}
+
+.ev-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.ev-about__subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.ev-about__text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+/* Line-Up */
+.ev-lineup__title {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.ev-lineup__photos {
+  display: flex;
+  gap: 1rem;
+}
+
+.ev-lineup__photo-wrap {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ev-lineup__photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(50%);
+  transition: filter var(--transition), transform var(--transition);
+}
+
+.ev-lineup__photo-wrap:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+/* Dégradé rose en bas des photos */
+.ev-lineup__photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(255, 198, 254, 0.55), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+/* ===== SECTION MEDIA ===== */
+.ev-media-section {
+  padding-block: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blob décoratif droite */
+.ev-media-section::before {
+  content: '';
+  position: absolute;
+  top: 3rem;
+  right: -80px;
+  width: 220px;
+  height: 380px;
+  background: #fce7f3;
+  border-radius: 45% 55% 60% 40% / 20% 30% 70% 80%;
+  transform: rotate(14deg);
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.ev-media__cursive {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  color: #FFC6FE;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.ev-media__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+/* Colonne vidéos */
+.ev-media__videos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.ev-media__video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #111;
+  box-shadow: var(--shadow);
+}
+
+.ev-media__video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Colonne images */
+.ev-media__images {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.ev-media__img-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.ev-media__img-wrap img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.ev-media__img-wrap:hover img {
+  transform: scale(1.04);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .ev-info-grid  { grid-template-columns: 1fr; }
+  .ev-media__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .ev-hero__wrapper {
+    width: calc(100% - 2rem);
+    min-height: 360px;
+    border-radius: 14px;
+  }
+  .ev-hero__content { padding: 2.5rem 2rem; }
+  .ev-lineup__photos { flex-wrap: wrap; }
+  .ev-lineup__photo-wrap { flex: 0 0 calc(50% - 0.5rem); }
+  .ev-media__img-wrap img { height: 180px; }
+  .ev-deco--tr, .ev-deco--mr { display: none; }
+}
