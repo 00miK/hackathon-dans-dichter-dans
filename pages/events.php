@@ -23,6 +23,7 @@
       <div class="ev-deco ev-deco--mr" aria-hidden="true"></div>
 
       <div class="ev-hero__wrapper">
+        <img src="/PROJET-SOCIETE/assets/img/eventC.png" alt="Event hero" class="ev-hero__bg-img">
         <div class="ev-hero__overlay"></div>
         <div class="ev-hero__content">
           <span class="ev-hero__cursive">Event</span>

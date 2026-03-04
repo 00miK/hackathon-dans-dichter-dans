@@ -16,12 +16,16 @@
   width: calc(100% - 4rem);
   max-width: 1400px;
   margin-inline: auto;
-  margin-top: 3rem; /* ← AJUSTEZ ICI : espace entre la navbar et l'image (ex: 1rem, 2rem, 4rem…) */
+  margin-top: 3rem;
   border-radius: 24px;
   overflow: hidden;
-  min-height: 520px;
-  background: url('/PROJET-SOCIETE/assets/img/hp1.jpeg') center/cover no-repeat;
   box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+
+.ev-hero__bg-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .ev-hero__overlay {
