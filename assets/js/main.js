@@ -89,11 +89,13 @@ const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ===== 7. ARCHIVES — lien actif ===== */
-document.querySelectorAll('.navbar__link').forEach(function(link) {
-  if (link.getAttribute('href') && link.getAttribute('href').indexOf('archives') !== -1) {
-    link.classList.add('navbar__link--active');
-  }
-});
+if (window.location.href.indexOf('archives') !== -1) {
+  document.querySelectorAll('.navbar__link').forEach(function(link) {
+    if (link.getAttribute('href') && link.getAttribute('href').indexOf('archives') !== -1) {
+      link.classList.add('navbar__link--active');
+    }
+  });
+}
 
 /* ===== 8. ARCHIVES — animation .reveal (fade-in up) ===== */
 const revealObserver = new IntersectionObserver(function(entries) {
