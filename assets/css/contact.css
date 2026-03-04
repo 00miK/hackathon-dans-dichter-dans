@@ -190,6 +190,9 @@
   .contact-page {
     padding-top: calc(var(--navbar-height) + var(--space-md));
   }
+  .contact__title {
+    margin-top: 2rem;
+  }
 
   .contact__form-card {
     padding: var(--space-md);

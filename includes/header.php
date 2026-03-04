@@ -24,4 +24,15 @@
     </button>
 
   </div>
+
+  <!-- Menu mobile combiné — toutes les pages -->
+  <nav class="navbar__mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="/PROJET-SOCIETE/pages/about.php">About</a></li>
+      <li><a href="/PROJET-SOCIETE/pages/events.php">Events</a></li>
+      <li><a href="/PROJET-SOCIETE/pages/archives.php">Archives</a></li>
+      <li><a href="/PROJET-SOCIETE/contact.php">Contact</a></li>
+    </ul>
+  </nav>
+
 </header>

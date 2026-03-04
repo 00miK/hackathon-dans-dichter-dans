@@ -181,9 +181,22 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .hero__video-wrapper { width: calc(100% - 2rem); border-radius: 14px; }
+  .hero {
+    min-height: auto;
+    margin-top: 0;
+    padding-top: calc(var(--navbar-height) + 1rem);
+    padding-bottom: 0.5rem;
+    align-items: flex-start;
+  }
+  .btn--hero {
+    font-size: 0.5rem;
+    padding: 0.55rem 1.2rem;
+    margin-top: 0.75rem;
+  }
+  .hero__video-wrapper { width: calc(100% - 2rem); border-radius: 14px; margin-top: 2.5rem; }
   .hero__content { padding: 2rem; }
-  .hero__title { font-size: 2rem; }
+  .hero__title { font-size: 1.2rem; }
+  .hero__subtitle { font-size: 0.6rem; }
   .about__grid { grid-template-columns: 1fr; }
   .about__image img { height: 280px; }
 }

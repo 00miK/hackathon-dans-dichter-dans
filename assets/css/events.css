@@ -19,7 +19,6 @@
   margin-top: 3rem;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.45);
 }
 
 .ev-hero__bg-img {
@@ -300,11 +299,23 @@
   .ev-media__grid { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 960px) {
+  .ev-hero__bg-img {
+    height: 480px;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
 @media (max-width: 600px) {
   .ev-hero__wrapper {
     width: calc(100% - 2rem);
-    min-height: 360px;
     border-radius: 14px;
+  }
+  .ev-hero__bg-img {
+    height: 360px;
+    object-fit: cover;
+    object-position: center top;
   }
   .ev-hero__content { padding: 2.5rem 2rem; }
   .ev-lineup__photos { flex-wrap: wrap; }

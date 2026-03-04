@@ -275,7 +275,12 @@
 
 @media (max-width: 600px) {
   .apropos-hero { padding-top: calc(var(--navbar-height) + 1rem); }
-  .apropos-banner-img img { height: 260px; }
+  .apropos-banner-img {
+    margin-left: -0.50rem;
+    margin-right: -0.50rem;
+    margin-top: 2rem;
+  }
+  .apropos-banner-img img { height: 225px; }
   .team__grid { grid-template-columns: repeat(2, 1fr); }
   .apropos-blob--l1, .apropos-blob--l2,
   .apropos-blob--r1, .apropos-blob--r2 { display: none; }
