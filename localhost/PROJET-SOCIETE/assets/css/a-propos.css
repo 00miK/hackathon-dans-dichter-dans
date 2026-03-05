@@ -1,0 +1,367 @@
+/*
+ * a-propos.css
+ * Styles de la page À propos : section "Who we are", équipe, partenaires
+ * et décorations organiques roses.
+ */
+
+/* ===== TITRE CURSIF DÉCORATIF  ===== */
+.apropos-cursive {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  color: #FFC6FE;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ===== BLOBS DÉCORATIFS ROSES ===== */
+.apropos-blob {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gauche haut — section Who we are */
+.apropos-blob--l1 {
+  top: calc(var(--navbar-height) + 80px);
+  left: -90px;
+  width: 200px;
+  height: 340px;
+  background: #fce7f3;
+  border-radius: 45% 55% 60% 40% / 20% 30% 70% 80%;
+  transform: rotate(-8deg);
+  opacity: 0.8;
+}
+
+/* Gauche bas — section Who we are */
+.apropos-blob--l2 {
+  top: calc(var(--navbar-height) + 380px);
+  left: -65px;
+  width: 130px;
+  height: 220px;
+  background: #FFC6FE;
+  border-radius: 55% 45% 40% 60% / 35% 65% 35% 65%;
+  transform: rotate(10deg);
+  opacity: 0.6;
+}
+
+/* Droite — section The Team */
+.apropos-blob--r1 {
+  top: 3rem;
+  right: -90px;
+  width: 190px;
+  height: 320px;
+  background: #fce7f3;
+  border-radius: 42% 58% 55% 45% / 25% 30% 70% 75%;
+  transform: rotate(14deg);
+  opacity: 0.8;
+}
+
+.apropos-blob--r2 {
+  top: 300px;
+  right: -60px;
+  width: 110px;
+  height: 200px;
+  background: #FFC6FE;
+  border-radius: 50% 50% 40% 60% / 35% 55% 45% 65%;
+  transform: rotate(-6deg);
+  opacity: 0.55;
+}
+
+
+/* ===== SECTION 1 — WHO WE ARE ===== */
+.apropos-hero {
+  padding-top: calc(var(--navbar-height) + 2rem);
+  padding-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.apropos-banner-img {
+  margin-top: 16px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--space-md);
+  margin-left: calc(-1 * var(--container-padding));
+  margin-right: calc(-1 * var(--container-padding));
+}
+
+.apropos-banner-img img {
+  width: 100%;
+  height: clamp(300px, 45vw, 580px);
+  object-fit: cover;
+  border-radius: 24px;
+  filter: grayscale(100%);
+  display: block;
+}
+
+/* Bloc titre sous l'image */
+.apropos-hero__title-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--space-md);
+}
+
+.apropos-hero__title {
+  font-family: var(--font-body);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.apropos-hero__company {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Grille 2 colonnes pour le texte */
+.apropos-hero__text-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-lg);
+  align-items: end;
+  position: relative;
+  z-index: 1;
+}
+
+.apropos-hero__desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+.apropos-hero__desc + .apropos-hero__desc {
+  margin-top: var(--space-sm);
+}
+
+.apropos-hero__right-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.apropos-hero__right-col .apropos-hero__desc {
+  color: var(--color-text-light);
+}
+
+
+/* ===== SECTION 2 — THE TEAM ===== */
+.section--team {
+  position: relative;
+  overflow: hidden;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.team-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+}
+
+.team-card__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter var(--transition);
+}
+
+.team-card:hover .team-card__photo {
+  filter: grayscale(40%);
+}
+
+.team-card__body {
+  padding: 0.6rem 0.75rem 0.85rem;
+}
+
+.team-card__name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.team-card__role {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 0.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+
+/* ===== SECTION 3 — PARTENAIRE ===== */
+.partenaire__inner {
+  max-width: 720px;
+}
+
+.partenaire__intro {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+.partenaire__intro + .partenaire__intro {
+  margin-top: var(--space-sm);
+}
+
+.partenaire__subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--space-md);
+  margin-bottom: 0.75rem;
+}
+
+.partenaire__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.partenaire__list li {
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.partenaire__list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #FFC6FE;
+  font-weight: 700;
+}
+
+.partenaire__contact {
+  margin-top: var(--space-md);
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+.partenaire__contact a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .team__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .apropos-hero__text-grid { grid-template-columns: 1fr; }
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .apropos-hero { padding-top: calc(var(--navbar-height) + 1rem); }
+  .apropos-banner-img {
+    margin-left: -0.50rem;
+    margin-right: -0.50rem;
+    margin-top: 2rem;
+  }
+  .apropos-banner-img img { height: 225px; }
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+  .apropos-blob--l1, .apropos-blob--l2,
+  .apropos-blob--r1, .apropos-blob--r2 { display: none; }
+}
+
+
+/* ===== CITATION COLONNE DROITE ===== */
+.apropos-quote {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: none;
+}
+.apropos-quote::before {
+  content: '"';
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  font-size: 3rem;
+  color: #1a1a1a;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+.apropos-quote p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+.apropos-quote cite {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-style: normal;
+}
+
+/* ===== LETTRES M DÉCORATIVES ===== */
+.m-letter {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  /* Le fond blanc du PNG devient transparent grâce au multiply */
+  mix-blend-mode: multiply;
+}
+
+/* Haut-gauche — passe au-dessus de l'image de couverture */
+.m-letter--topleft {
+  width: clamp(300px, 42vw, 540px);
+  top: calc(var(--navbar-height) + 20px);
+  left: -70px;
+  z-index: 2; /* au-dessus de .apropos-banner-img (z-index: 1) */
+  transform: rotate(35deg);
+}
+
+/* Côté droit — passe sous les cartes de l'équipe */
+.m-letter--right {
+  width: clamp(280px, 38vw, 500px);
+  top: 1rem;
+  right: -110px;
+  z-index: 0; /* sous .team__grid (z-index: 1), peint en premier (DOM order) */
+  transform: rotate(35deg);
+}
+
+@media (max-width: 768px) {
+  .m-letter { display: none; }
+}
+
+
+/* ===== TEAM CARD — nom/prénom/profession ===== */
+.team-card__firstname {
+  font-weight: 400;
+  color: var(--color-text);
+}
+.team-card__name strong {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.team-card__role {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.2rem;
+}

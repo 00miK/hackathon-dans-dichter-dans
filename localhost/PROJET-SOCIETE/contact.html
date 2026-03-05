@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<!-- Mirrored from localhost/PROJET-SOCIETE/contact.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2026 10:24:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Neem contact met ons op voor vragen over ons programma, een samenwerking, of gewoon hallo zeggen.">
+<title>Contact — Dans! Dichter! Dans!</title>
+
+<!-- CSS principal  -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!-- Icônes FontAwesome -->
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+  <div class="navbar__inner">
+
+    <nav class="navbar__left">
+      <ul class="navbar__links">
+        <li><a href="pages/about.html" class="navbar__link">About</a></li>
+        <li><a href="pages/events.html" class="navbar__link">Events</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/img/logo.png" alt="Dans! Dichter! Dans!">
+    </a>
+
+    <nav class="navbar__right">
+      <ul class="navbar__links">
+        <li><a href="pages/archives.html" class="navbar__link">Archives</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="navbar__burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- Menu mobile combiné — toutes les pages -->
+  <nav class="navbar__mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/events.html">Events</a></li>
+      <li><a href="pages/archives.html">Archives</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+</header>
+  <main class="contact-page">
+
+    <!-- Formes abstraites roses en arrière-plan -->
+    <div class="contact-blob contact-blob--tl" aria-hidden="true"></div>
+    <div class="contact-blob contact-blob--br" aria-hidden="true"></div>
+
+    <!-- Lettre C décorative — côté droit, sous le contenu -->
+    <img class="c-letter"
+         src="assets/img/C_lettre.png"
+         alt="" aria-hidden="true">
+
+    <div class="container contact__grid">
+
+      <!-- ===== COLONNE GAUCHE ===== -->
+      <div class="contact__info">
+
+        <h1 class="contact__title">Contact</h1>
+
+        <p class="contact__desc">
+          Vragen over ons programma, een
+          samenwerking, of gewoon hallo zeggen?
+          <strong>We horen graag van je.</strong>
+        </p>
+
+        <div class="contact__details">
+
+          <div class="contact__detail-item">
+            <div class="contact__icon-wrap">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact__detail-label">E-mailadres</p>
+              <a href="mailto:info@dansdichterdans.be" class="contact__detail-value">
+                info@dansdichterdans.be
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__detail-item">
+            <div class="contact__icon-wrap">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact__detail-label">Telefoonnummer</p>
+              <a href="tel:+32488868211" class="contact__detail-value">
+                +32 488 86 82 11
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== COLONNE DROITE — FORMULAIRE ===== -->
+      <div class="contact__form-card">
+        <form id="contact-form" action="https://formspree.io/f/mqedrnpg" method="POST" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="naam">Naam<span>*</span></label>
+              <input type="text" id="naam" name="naam" placeholder="Joe doe" required>
+            </div>
+            <div class="form-group">
+              <label for="voornaam">Voornaam<span>*</span></label>
+              <input type="text" id="voornaam" name="voornaam" placeholder="Radie" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-Mailadres<span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="Joe.radie@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefoon">Telefoonnummer</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="+ 123 467 890">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bericht">Bericht<span>*</span></label>
+            <textarea id="bericht" name="bericht" rows="5" placeholder="Uw bericht" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-verzenden">Verzenden</button>
+          <p id="form-success" hidden style="color:green; margin-top:1rem;">✓ Bericht verzonden! We nemen snel contact met je op.</p>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="container footer__inner">
+
+    <!-- Logo + description -->
+    <div class="footer__brand">
+      <a href="index.html">
+        <img src="assets/img/logo.png" alt="Dans! Dichter! Dans!" class="footer__logo">
+      </a>
+      <p class="footer__desc">Un espace où les artistes se rencontrent et où la performance devient mouvement.</p>
+    </div>
+
+    <!-- Colonne Media -->
+    <nav class="footer__nav" aria-label="Media">
+      <h3 class="footer__nav-title">Company</h3>
+      <ul>
+        <li><a href="pages/interviews.html">About</a></li>
+        <li><a href="pages/podcast.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Colonne Company -->
+    <nav class="footer__nav" aria-label="Company">
+      <h3 class="footer__nav-title">Events</h3>
+      <ul>
+        <li><a href="pages/about.html">Interviews </a></li>
+        <li><a href="pages/events.html">Podcast</a></li>
+        <li><a href="pages/past-editions.html">Aftermovies</a></li>
+        <li><a href="pages/open-call.html">Teasers</a></li>
+      </ul>
+    </nav>
+
+    <!-- Newsletter + réseaux sociaux -->
+    <div class="footer__newsletter">
+      <h3 class="footer__nav-title">Join a Newsletter</h3>
+      <label for="newsletter-email">Your Email</label>
+      <div class="footer__newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter Your Email">
+        <button type="button">Subscribe</button>
+      </div>
+      <div class="footer__social">
+        <a href="http://www.instagram.com/dansdichterdans" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/dansdichterdans" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/channel/UCeXigmFpXBc70l3487iY1jQ" target="_blank" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Barre du bas -->
+  <div class="footer__bottom">
+    <p>Copyright Team 5</p>
+    <div class="footer__bottom-info">
+      <span><i class="fa-solid fa-location-dot"></i> Heilig-Hartstraat 16, 9040 Sint-Amandsberg</span>
+      <span><i class="fa-solid fa-envelope"></i> info@dansdichterdans.be</span>
+      <span><i class="fa-solid fa-phone"></i> +32 488 86 82 11</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from localhost/PROJET-SOCIETE/contact.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2026 10:24:34 GMT -->
+</html>

@@ -1,0 +1,30 @@
+/*
+ * main.css
+ * Point d'entrée CSS — importe tous les fichiers partiels du projet
+ * et déclare les polices locales (Aileron, HomemadeApple).
+ */
+
+@import 'variables.css';
+@import 'layout.css';
+@import 'home.css';
+@import 'contact.css';
+@import 'a-propos.css';
+@import 'events.css';
+@import 'archives.css';
+
+/* Polices locales  */
+@font-face {
+  font-family: 'Aileron';
+  src: url('../fonts/Aileron-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HomemadeApple';
+  src: url('../fonts/HomemadeApple-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
