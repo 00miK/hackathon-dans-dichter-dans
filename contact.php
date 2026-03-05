@@ -17,6 +17,11 @@
     <div class="contact-blob contact-blob--tl" aria-hidden="true"></div>
     <div class="contact-blob contact-blob--br" aria-hidden="true"></div>
 
+    <!-- Lettre C décorative — côté droit, sous le contenu -->
+    <img class="c-letter"
+         src="/PROJET-SOCIETE/assets/img/C_lettre.png"
+         alt="" aria-hidden="true">
+
     <div class="container contact__grid">
 
       <!-- ===== COLONNE GAUCHE ===== -->

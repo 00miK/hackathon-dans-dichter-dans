@@ -185,6 +185,24 @@
   transform: translateY(-2px);
 }
 
+/* ===== LETTRE C DÉCORATIVE ===== */
+.c-letter {
+  position: absolute;
+  right: -40px;
+  top: 55%;
+  transform: translateY(-50%);
+  width: clamp(200px, 22vw, 300px);
+  pointer-events: none;
+  user-select: none;
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .c-letter { display: none; }
+}
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .contact__grid {

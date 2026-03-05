@@ -22,6 +22,11 @@
       <div class="apropos-blob apropos-blob--l1" aria-hidden="true"></div>
       <div class="apropos-blob apropos-blob--l2" aria-hidden="true"></div>
 
+      <!-- Lettre M décorative — haut gauche -->
+      <img class="m-letter m-letter--topleft"
+           src="/PROJET-SOCIETE/assets/img/M_letter.png"
+           alt="" aria-hidden="true">
+
       <div class="container">
 
         <!-- Image large en haut -->
@@ -74,6 +79,12 @@
          THE TEAM
     =================================================== -->
     <section class="section section--alt section--team">
+
+      <!-- Lettre M décorative — côté droit, sous les cartes -->
+      <img class="m-letter m-letter--right"
+           src="/PROJET-SOCIETE/assets/img/M_letter.png"
+           alt="" aria-hidden="true">
+
       <div class="container" style="position: relative;">
 
         <!-- Blobs décoratifs roses — côté droit -->

@@ -316,6 +316,38 @@
   font-style: normal;
 }
 
+/* ===== LETTRES M DÉCORATIVES ===== */
+.m-letter {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  /* Le fond blanc du PNG devient transparent grâce au multiply */
+  mix-blend-mode: multiply;
+}
+
+/* Haut-gauche — passe au-dessus de l'image de couverture */
+.m-letter--topleft {
+  width: clamp(300px, 42vw, 540px);
+  top: calc(var(--navbar-height) + 20px);
+  left: -70px;
+  z-index: 2; /* au-dessus de .apropos-banner-img (z-index: 1) */
+  transform: rotate(35deg);
+}
+
+/* Côté droit — passe sous les cartes de l'équipe */
+.m-letter--right {
+  width: clamp(280px, 38vw, 500px);
+  top: 1rem;
+  right: -110px;
+  z-index: 0; /* sous .team__grid (z-index: 1), peint en premier (DOM order) */
+  transform: rotate(35deg);
+}
+
+@media (max-width: 768px) {
+  .m-letter { display: none; }
+}
+
+
 /* ===== TEAM CARD — nom/prénom/profession ===== */
 .team-card__firstname {
   font-weight: 400;
