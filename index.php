@@ -22,7 +22,6 @@
           id="hero-video"
           src="https://www.youtube.com/embed/zvKhIGSS0Kw?autoplay=1&mute=1&loop=1&playlist=zvKhIGSS0Kw&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
           title="Hero background video"
-          frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen>
         </iframe>
