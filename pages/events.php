@@ -30,6 +30,10 @@
           <p class="ev-hero__info">DOGMA spoken Word Festival &nbsp;|&nbsp; 11 - 12 Juin &nbsp;·&nbsp; Gand</p>
           <a href="#event-detail" class="btn btn--hero">Bekijk het komende event</a>
         </div>
+        <!-- M1 — à l'intérieur du wrapper, au-dessus de l'image -->
+        <img class="ev-m-letter ev-m-letter--top"
+             src="/PROJET-SOCIETE/assets/img/M_letter.png"
+             alt="" aria-hidden="true">
       </div>
     </section>
 
@@ -38,6 +42,12 @@
          TITRE PRINCIPAL
     =================================================== -->
     <section class="ev-title-section" id="event-detail">
+
+      <!-- M2 — niveau titre DOGMA, bord droit -->
+      <img class="ev-m-letter ev-m-letter--mid"
+           src="/PROJET-SOCIETE/assets/img/M_letter.png"
+           alt="" aria-hidden="true">
+
       <div class="container">
         <h1 class="ev-main-title">DOGMA Spoken Word Festival</h1>
         <p class="ev-main-meta">11 - 12 Juni &nbsp;·&nbsp; Gand</p>
@@ -49,6 +59,12 @@
          OVER HET EVENEMENT  +  LINE-UP
     =================================================== -->
     <section class="ev-info-section">
+
+      <!-- M3 — sous le line-up, bord droit, rotation 180° -->
+      <img class="ev-m-letter ev-m-letter--bot"
+           src="/PROJET-SOCIETE/assets/img/M_letter.png"
+           alt="" aria-hidden="true">
+
       <div class="container ev-info-grid">
 
         <!-- Colonne gauche : description -->
