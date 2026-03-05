@@ -66,7 +66,7 @@
 
       <!-- ===== COLONNE DROITE — FORMULAIRE ===== -->
       <div class="contact__form-card">
-        <form id="contact-form" action="https://formspree.io/f/xeelyywe" method="POST" novalidate>
+        <form id="contact-form" action="https://formspree.io/f/mqedrnpg" method="POST" novalidate>
 
           <div class="form-row">
             <div class="form-group">
