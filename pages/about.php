@@ -3,7 +3,7 @@
   $metaDescription = "Découvrez qui nous sommes, notre équipe et comment devenir partenaire de Dans! Dichter! Dans!";
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 <head>
   <?php include __DIR__ . '/../includes/head.php'; ?>
 </head>

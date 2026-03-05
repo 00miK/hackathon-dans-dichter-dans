@@ -3,7 +3,7 @@
   $metaDescription = "DDD brengt spoken word tot leven met live events en performances.";
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 <head>
   <?php include __DIR__ . '/includes/head.php'; ?>
 </head>

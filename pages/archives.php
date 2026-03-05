@@ -3,7 +3,7 @@
   $metaDescription = "Découvrez toutes les éditions passées de Dans! Dichter! Dans!";
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 <head>
   <?php include __DIR__ . '/../includes/head.php'; ?>
 </head>
